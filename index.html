@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">My To-Do List</h1>
+
+        <!-- Task input form -->
+        <form action="TodoServlet" method="POST" class="task-form">
+            <input type="text" name="task" placeholder="Enter a new task..." required class="task-input">
+            <button type="submit" class="add-btn">Add Task</button>
+        </form>
+
+        <!-- Task table -->
+        <table class="task-table">
+            <thead>
+                <tr>
+                    <th>Task</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Example task row -->
+                <tr>
+                    <td>Task 1</td>
+                    <td><button class="edit-btn">Edit</button></td>
+                    <td><button class="delete-btn">Delete</button></td>
+                </tr>
+                <!-- More rows will be dynamically inserted here -->
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

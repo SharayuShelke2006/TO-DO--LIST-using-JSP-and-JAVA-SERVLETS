@@ -1,0 +1,96 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f3f0ff; /* Light purple background */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    text-align: center;
+}
+
+.title {
+    color: #6a0dad; /* Dark purple */
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.task-form {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.task-input {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #b19cd9; /* Lighter purple */
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.add-btn {
+    background-color: #6a0dad; /* Dark purple */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.add-btn:hover {
+    background-color: #9932cc; /* Slightly lighter purple on hover */
+}
+
+.task-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.task-table th, .task-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+.task-table th {
+    background-color: #b19cd9; /* Lighter purple */
+    color: white;
+}
+
+.task-table td {
+    background-color: #f3f0ff;
+}
+
+.edit-btn, .delete-btn {
+    background-color: #6a0dad;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.edit-btn:hover {
+    background-color: #9932cc;
+}
+
+.delete-btn:hover {
+    background-color: #ff4d4d; /* Red for delete button hover */
+}
